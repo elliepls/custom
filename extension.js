@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "elliepls";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,16 +46,16 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "(ʘᗩʘ')",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/elliepls/source/master/lang/en.json",
+      scriptLink: "https://rawgit.com/elliepls/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
+      startupVolume: 10, // 0-100
       startupEmoji: false, // true or false
       autowoot: true,
-      autoskip: false,
+      autoskip: true,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
@@ -87,7 +87,7 @@
       ["unavailable", "The song you played was not available for some users. "]
       ],
       afkpositionCheck: 15,
-      afkRankCheck: "ambassador",
+      afkRankCheck: "residentdj",
       motdEnabled: false,
       motdInterval: 5,
       motd: "Temporary Message of the Day",
@@ -98,20 +98,20 @@
       rulesLink: null,
       themeLink: null,
       fbLink: null,
-      youtubeLink: null,
+      youtubeLink: https://www.youtube.com/user/MrPalikkaMc,
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/elliepls/custom/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/elliepls/custom/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/elliepls/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/elliepls/source/master/basicBot.js", extend);
 
 }).call(this);
